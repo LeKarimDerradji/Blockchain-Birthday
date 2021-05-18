@@ -17,8 +17,10 @@ If that happens, should they be able to retrieve their funds?
 
 ## Working with time in Solidity is thrilling
 
-And because, when time passes by, nothing is trully certain in humain affairs. 
-And we got to remember that once a contract is deployed on the blockchain, it is, ad-vitam aeternam. 
+When time passes by, nothing is trully certain in humain affairs, 
+And we got to remember that once a contract is deployed on the blockchain, it usually can't be change, it is signed, ad-vitam aeternam. 
+
+And the purpose of a deployed on a blockchain, isn't to reduce the need of human intermediary ? 
 
 Thus, make that contract more flexible, and to get around these fundamental problem, I implemented more functions to it. 
 
