@@ -2,7 +2,7 @@
  
  Teacher : @AbsoluteVirtueXI
  
- ![image](https://www.dalipaintings.com/images/paintings/the-melting-watch.jpg)
+ ![image](https://www.passion-estampes.com/puzzles/eg/dali/puzzle-dali-montre-molle.jpg)
  
 The current Smart Contract is a School Project : 
 
