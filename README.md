@@ -3,8 +3,17 @@
  Teacher : @AbsoluteVirtueXI
  
 The current Smart Contract is a School Project : 
-What is asked is to write a smart contract with two three major functionalities,                                                                                                                                        
-first of all, it is to be able, for some given friends, To deposit their money inside that piggy bank is the second functionality,
-the smart contract will lock the function that serves to withdraw all the funds. This will be done until the birthday of a given recipient is met. 
-Now, one problem remains, who should be in charge ? Let's say that the recipient dies before attaining their birthday ? 
-Working with time in solidity requires more checks, since nothing is trully certains, I will then implements that. 
+
+It was asked to write a smart contract that act as a collaborative funds to be unlock at a given birthday, of a given friend. 
+
+For that, we work and think in EPOCH time. (The number of seconds starting around 1970) /// TODO change. 
+
+As i started to code, some problem appeared, who should be in charge?
+The recipient ? What happens if the recipient dies before his birthday? 
+And, what happen if the friends are not his or her friends anymore before the given date? 
+If that happens, should they be able to retrieve their funds? 
+
+Working with time in Solidity is passionating, because, when time passes by, nothing is trully certain in humain affairs. 
+
+To make that contract more flexible, and to get around these fundamental problem, I implemented more functions to it. 
+
