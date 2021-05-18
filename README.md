@@ -2,7 +2,7 @@
  
  Teacher : @AbsoluteVirtueXI
  
- (![image](https://user-images.githubusercontent.com/53260686/118690372-4ada4600-b808-11eb-99ad-b5776479d16c.png))
+ ![image](https://www.dalipaintings.com/images/paintings/the-melting-watch.jpg)
  
 The current Smart Contract is a School Project : 
 
