@@ -2,6 +2,8 @@
  
  Teacher : @AbsoluteVirtueXI
  
+ (![image](https://user-images.githubusercontent.com/53260686/118690372-4ada4600-b808-11eb-99ad-b5776479d16c.png))
+ 
 The current Smart Contract is a School Project : 
 
 It was asked to write a smart contract that act as a collaborative funds to be unlock at a given birthday, of a given friend. 
