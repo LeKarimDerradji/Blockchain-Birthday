@@ -13,7 +13,8 @@ The recipient ? What happens if the recipient dies before his birthday?
 And, what happen if the friends are not his or her friends anymore before the given date? 
 If that happens, should they be able to retrieve their funds? 
 
-Working with time in Solidity is passionating, because, when time passes by, nothing is trully certain in humain affairs. 
+Working with time in Solidity is thrilling, because, when time passes by, nothing is trully certain in humain affairs. 
+And we got to remember that once a contract is deployed on the blockchain, it is, ad-vitam aeternam. 
 
-To make that contract more flexible, and to get around these fundamental problem, I implemented more functions to it. 
+Thus, make that contract more flexible, and to get around these fundamental problem, I implemented more functions to it. 
 
