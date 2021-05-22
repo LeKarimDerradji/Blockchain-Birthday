@@ -4,23 +4,50 @@
  
  ![image](https://www.passion-estampes.com/puzzles/eg/dali/puzzle-dali-montre-molle.jpg)
  
-# The current Smart Contract is a School Project : 
+ 
+# Todo : 
 
-It was asked to write a smart contract that act as a collaborative funds to be unlock at a given birthday, of a given friend. 
+We had to write a smart contract that acts as a time-locked piggy bank for friends to deposit gift 
+in the form of crypto-currency for the recipient to withdraw at the time of his birthday. 
 
-For that, we work and think in EPOCH time. (The number of seconds starting around 1970) /// TODO change. 
+## How to resolve : 
 
-As i started to code, some problem appeared, who should be in charge?
-The recipient ? What happens if the recipient dies before his birthday? 
-And, what happen if the friends are not his or her friends anymore before the given date? 
-If that happens, should they be able to retrieve their funds? 
+Make the use of the ```block.timestamp``` object in order to get the time in Epoch of the current block (when the contract is deployed) 
+and add to it the remaining time (in epoch format) until the birthday of the recipient. 
 
-## Working with time in Solidity is thrilling
+Store that into a state variable, when that variable will be superior or equal to the current time and date the day of the recipient's birthday, 
+then he or she can withdraw their due. 
+ 
+# Edge Cases : 
 
-When time passes by, nothing is trully certain in humain affairs, 
-And we got to remember that once a contract is deployed on the blockchain, it usually can't be change, it is signed, ad-vitam aeternam. 
+As I was coding the smart contract, I begin to think about time passing by and the uncertainty it offers in human affairs. 
 
-And the purpose of a deployed on a blockchain, isn't to reduce the need of human intermediary ? 
+What if one or multiple friends decides to turn their back on the recipient before his or her birthday?
 
-Thus, make that contract more flexible, and to get around these fundamental problem, I implemented more functions to it. 
+What if the recipient dies before attaining his or her next birthday? 
 
+What was a simple task turned into a cynical coding hobbie. 
+
+## Edge Cases Solutions : 
+
+We will assign each donation to a mapping that keeps track of each donators balances. 
+In clear, we will know who gave what, and that in case the friends decides to withdraw their money before the recipients birthday. 
+
+## The Iscariot Feature, a voting mechanism based on majority : 
+
+I could have implemented the ability for each friends to withdraw their money at anytime, but it wasn't very thrilling. 
+
+I prefered to implement a vote system called ```iscariotCount```
+
+If 51% of the friends decides to "betrays" the recipient, then the storage ```iscariot``` becomes true. 
+
+When it is, **only** the friends who has voted, and who has donated, can withdraw their due before the birthday of the recipient. 
+
+## TO-DO 
+
+- Dead Recipient edge case
+- Famility wallet address
+- Currency redistribution to family automatically 
+- Commentaries 
+- Hardhat/Waffle Testing
+- Get a new computer
