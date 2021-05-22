@@ -36,7 +36,21 @@ contract AccessControl {
         
         function owner() public view returns(address) {
             return _owner;
-       }
+        }
+
+        /**
+        *@dev I made that pretty long modifer because it was cleaner to put it there
+        * this one is to check wether or not the recipient got betrayed. 
+        */
+         modifier onlyIscariot() {
+            require(_iscariot = true, 'Birthday: the majority of the friends has to vote in order to withdraw the gifts.');
+            require(_friendVoted[msg.sender] = true, 'Birthday: you need to have voted true to withdraw your funds.');
+            require(_friendsBalances[msg.sender] > 0, 'Birthday: you dont have funds to withdraw anymore');
+            require(_iscariotCount > _numberOfFriends * 51 / 100, 'Birthday: a majority of the friend have to betray the recipients.');
+            _;
+        }
+            
+
        
        function isFriends(address account) public view returns(bool) {
             return _friends[account];
